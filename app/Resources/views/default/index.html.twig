@@ -6,10 +6,47 @@
     <div id="wrapper">
         <div id="container">
             <div id="welcome">
-                <h1><span>Welcome to</span> Symfony {{ constant('Symfony\\Component\\HttpKernel\\Kernel::VERSION') }}</h1>
+                <h1><span>Bienvenue dans</span> Symfony {{ constant('Symfony\\Component\\HttpKernel\\Kernel::VERSION') }}</h1>
             </div>
 
-            <div id="status">
+            <div>
+                <h2>Projet 1 - Filmotheque</h2>
+                <div style="width:40%;float:left;margin-right: 50px">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                        <path fill="#3F51B5" d="M43.4,8.3L4,15l-0.3-2c-0.4-2.2,1.1-4.2,3.3-4.6l31.6-5.3c2.2-0.4,4.2,1.1,4.6,3.3L43.4,8.3z"/>
+                        <path fill="#3F51B5" d="M40,41H8c-2.2,0-4-1.8-4-4V15h40v22C44,39.2,42.2,41,40,41z"/>
+                        <g>
+                            <polygon fill="#9FA8DA" points="18.8,6.4 23.7,11.7 27.7,11 22.7,5.7  "/>
+                            <polygon fill="#9FA8DA" points="10.9,7.7 15.8,13 19.8,12.3 14.8,7.1  "/>
+                            <polygon fill="#9FA8DA" points="26.7,5.1 31.6,10.3 35.5,9.7 30.6,4.4  "/>
+                            <polygon fill="#9FA8DA" points="34.5,3.8 39.5,9 43.4,8.3 38.5,3.1  "/>
+                        </g>
+                        <circle fill="#9FA8DA" cx="7.5" cy="11.5" r="1.5"/>
+                        <g>
+                            <polygon fill="#9FA8DA" points="40,15 36,21 40,21 44,15  "/>
+                            <polygon fill="#9FA8DA" points="32,15 28,21 32,21 36,15  "/>
+                            <polygon fill="#9FA8DA" points="24,15 20,21 24,21 28,15  "/>
+                            <polygon fill="#9FA8DA" points="16,15 12,21 16,21 20,15  "/>
+                            <polygon fill="#9FA8DA" points="8,15 4,21 8,21 12,15  "/>
+                        </g>
+                    </svg>
+                </div>
+                <div>
+                    <ul>
+                        <li>Liste des <a href="{{ path('film_index') }}">films</a></li>
+                        <li>Liste des <a href="{{ path('acteur_index') }}">acteurs</a></li>
+                        <li>Liste des <a href="{{ path('categorie_index') }}">catégories</a></li>
+                    </ul>
+                    <h3>TODO</h3>
+                    <ul style="font-size:0.8em">
+                        <li>Personnaliser les formulaires New/Edit</li>
+                        <li>Paginer les listes</li>
+                        <li>Ajouter un menu de navigation</li>
+                    </ul>
+                </div>
+            </div>
+            <hr style="clear:left" />
+                        <div id="status">
                 <p>
                     <svg id="icon-status" width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" fill="#759E1A"/></svg>
 
@@ -17,7 +54,6 @@
                     <code>{{ base_dir }}/</code>
                 </p>
             </div>
-
             <div id="next">
                 <h2>What's next?</h2>
                 <p>
